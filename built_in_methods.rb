@@ -8,19 +8,23 @@
 # The return value is "hello world"
 "Hello World".downcase
 
-
+# The include question mark method is being calling on the string "Hello World" and is asking if it includes the the string "Hello",
+# which takes into consideration the uppercase "H".
 "Hello World".include?("Hello")
 
-
+# The end_with question mark method is being called on the string "Hello World" and is asking if the string ends with the string "Hello",
+# The string does not so the boolean return is false.
 "Hello World".end_with?("Hello")
 
-
+# The end_with question mark method is being called on the string "Hello World" to ask if the string ends with "rld",
+# AS the string does, the boolean return in the console is true.
 "Hello World".end_with?("rld")
 
-
+# The even question mark method is calling on the integer 12 to ask if it is an even number.
+# As the answer is true, the true boolean is returned.
 12.even?
 
-
+# The next method is being called on the integer 18 and the return is the next numerical number given as an integer 19.
 18.next
 
 
