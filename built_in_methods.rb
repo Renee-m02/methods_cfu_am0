@@ -68,13 +68,13 @@ puts birth_month
 # The variable age is being called with the method to_f which changes the integer into a floater
 # The return is 25.0
 age = 25
-age.to_f
+puts age.to_f
 # => 25.0
 
 # The variable year which is assigned the integer 2024 is being called with the pred (or predecessor) method.
 # This returns the number that comes before it in numerical order.
 year = 2024
-year.pred
+puts year.pred
 # => 2023
 
 
@@ -83,3 +83,16 @@ year.pred
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+# The numbers array is called using the minmax method, which returns the minimum valued and the maximum valued
+# elements. In this instance the 2 integer is returned for the minimum
+# and the 1999 integer is returned for the maximum
+numbers = [2, 25, 1999]
+puts numbers.minmax
+# => [2, 1999]
+
+# The names array is called using the rotate method, this takes the variable in the 0 position and moves it to
+# the end of the list, or in this example to the 2 position.
+names = ["Phoenix", "Jeni", "Cinthanie"]
+puts names.rotate
+# => ["Jeni", "Cinthanie", "Phoenix"]
