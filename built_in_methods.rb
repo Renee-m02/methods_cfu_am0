@@ -8,19 +8,19 @@
 # The return value is "hello world"
 "Hello World".downcase
 
-# The include question mark method is being calling on the string "Hello World" and is asking if it includes the the string "Hello",
+# The include? method is being calling on the string "Hello World" and is asking if it includes the the string "Hello",
 # which takes into consideration the uppercase "H".
 "Hello World".include?("Hello")
 
-# The end_with question mark method is being called on the string "Hello World" and is asking if the string ends with the string "Hello",
+# The end_with? method is being called on the string "Hello World" and is asking if the string ends with the string "Hello",
 # The string does not so the boolean return is false.
 "Hello World".end_with?("Hello")
 
-# The end_with question mark method is being called on the string "Hello World" to ask if the string ends with "rld",
+# The end_with? method is being called on the string "Hello World" to ask if the string ends with "rld",
 # AS the string does, the boolean return in the console is true.
 "Hello World".end_with?("rld")
 
-# The even question mark method is calling on the integer 12 to ask if it is an even number.
+# The even? method is calling on the integer 12 to ask if it is an even number.
 # As the answer is true, the true boolean is returned.
 12.even?
 
@@ -43,6 +43,20 @@
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
+# This reverse method is calling the name variable assigned to the string "Renee Messersmith".
+# This changes the return by reversing the order of the characters in the string.
+name = "Renee Messersmith"
+puts name.reverse
+# => "htimsresseM eeneR"
+
+# This reverse! method is calling the birth_month variable assigned to a string.
+# It is modifying the variable it is called on, due to the "!". So when calling birth_month afterwards,
+# it will remain reversed until changed back by calling the same method.
+birth_month = "February"
+puts birth_month.reverse!
+# => "yraurbeF"
+puts birth_month
+# => "yraurbeF"
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
@@ -51,6 +65,17 @@ puts first_name.start_with?("J")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+# The variable age is being called with the method to_f which changes the integer into a floater
+# The return is 25.0
+age = 25
+age.to_f
+# => 25.0
+
+# The variable year which is assigned the integer 2024 is being called with the pred (or predecessor) method.
+# This returns the number that comes before it in numerical order.
+year = 2024
+year.pred
+# => 2023
 
 
 # SECTION 4: Calling methods on variables assigned to arrays.
